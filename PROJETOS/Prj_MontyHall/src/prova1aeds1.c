@@ -12,7 +12,7 @@ int main(void) {
 	printf ("A porta premiada é: %d \n", portaPremiada);
 	printf("> Bem-vindo ao jogo Monty Hall! \n");
 	printf("Escolha uma porta (1, 2 ou 3): \n");
-	printf("porta 1 \n porta 2\n porta 3\n");
+	printf("porta 1\nporta 2\nporta 3\n");
 	scanf("%d", &portaEscolhida);
 
 	if (portaEscolhida > 3 || portaEscolhida < 1){
@@ -29,7 +29,10 @@ int main(void) {
 	do{
 		portaVazia = rand()% 3 + 1;
 
-	}while(portaEscolhida != portaVazia && portaPremiada != portaVazia);
+	}while(portaEscolhida == portaVazia || portaPremiada == portaVazia);
+
+	printf("\nA porta vazia aberta foi a: %d", portaVazia);
+	
 	printf("\n Uma das portas vazias foi retirada, você quer trocar de porta?\n SIM-S \n NAO-N\n");
 	scanf(" %c", &simOuNao);
 
