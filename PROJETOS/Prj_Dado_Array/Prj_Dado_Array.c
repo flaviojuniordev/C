@@ -19,26 +19,26 @@ int main(void)
     srand(time(NULL));
     jogador1[0] = rodarDado();
     jogador1[1] = rodarDado();
-    printf("Jogador 1: %d + %d", jogador1[0], jogador1[1]);
+    printf("\nJogador 1: %d + %d", jogador1[0], jogador1[1]);
     somaJogador1 = calcularSoma(jogador1[0], jogador1[1]);
-    printf("Soma do jogador 1: %d", somaJogador1);
-    jogador2[0] = rolarDado();
-    jogador2[1] = rolarDado();
-    printf("Jogador 2: %d + %d", jogador2[0], jogador2[1]);
+    printf("\nSoma do jogador 1: %d", somaJogador1);
+    jogador2[0] = rodarDado();
+    jogador2[1] = rodarDado();
+    printf("\nJogador 2: %d + %d", jogador2[0], jogador2[1]);
     somaJogador2 = calcularSoma(jogador2[0], jogador2[1]);
-    printf("Soma do jogador 2: %d", somaJogador2);
+    printf("\nSoma do jogador 2: %d", somaJogador2);
 
     if (somaJogador1 > somaJogador2)
     {
-        printf("Jogador 1 venceu");
+        printf("\nJogador 1 venceu");
     }
     else if (somaJogador1 < somaJogador2)
     {
-        printf("Jogador 2 venceu");
+        printf("\nJogador 2 venceu");
     }
     else
     {
-        printf("empate");
+        printf("\nempate");
     }
 
     return 0;
