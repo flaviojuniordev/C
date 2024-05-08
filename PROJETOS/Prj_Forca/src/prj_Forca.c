@@ -44,6 +44,7 @@ int main(void) {
 
 	printf("Bem vindo ao jogo da forca:\n");
 	printf(" _\n"
+		  "| \n"
 		  "| \n");
 
     while(tentativas > 0){
@@ -66,7 +67,11 @@ int main(void) {
     	tentativas--;
     	printf("Letra incorreta!\n");
     }else{
-    	printf("Letra correta!");
+    	printf("Letra correta!\n");
+	    	printf(" _\n"
+		  "| \n"
+		  "| \n");
+	    
 
     }if (strcmp(palavra,palavraOculta) == 0){
     	printf(" Parabéns, você ganhou! a palavra era %s\n", palavra);
